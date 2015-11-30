@@ -7,17 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		664CD9D01C0A5C7C0002FFCC /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664CD9CF1C0A5C7C0002FFCC /* ChatTableViewController.swift */; };
+		665B7F3F1C0A19D70077CBEC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FBA701C083D8D0039F6E2 /* Realm.framework */; };
+		665B7F401C0A19D70077CBEC /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 665FBA701C083D8D0039F6E2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		665B7F411C0A19D70077CBEC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FBA711C083D8D0039F6E2 /* RealmSwift.framework */; };
+		665B7F421C0A19D70077CBEC /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 665FBA711C083D8D0039F6E2 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		665FBA481C074B430039F6E2 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665FBA471C074B430039F6E2 /* ChatManager.swift */; };
+		665FBA4F1C0751EF0039F6E2 /* PeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665FBA4E1C0751EF0039F6E2 /* PeersTableViewController.swift */; };
+		665FBA5B1C075C340039F6E2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665FBA5A1C075C340039F6E2 /* RootViewController.swift */; };
+		665FBA771C083E0A0039F6E2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665FBA761C083E0A0039F6E2 /* Models.swift */; };
+		666B34E41C0C0B5800E92608 /* CoreMesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666B34E31C0C0B5800E92608 /* CoreMesh.framework */; };
+		666B34E51C0C0B5800E92608 /* CoreMesh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 666B34E31C0C0B5800E92608 /* CoreMesh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		666B35281C0C236300E92608 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666B35261C0C231700E92608 /* ObjectMapper.framework */; };
+		666B35291C0C236300E92608 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 666B35261C0C231700E92608 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6677E8821C074671008B6D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677E8811C074671008B6D71 /* AppDelegate.swift */; };
-		6677E8841C074671008B6D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677E8831C074671008B6D71 /* ViewController.swift */; };
 		6677E8871C074671008B6D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6677E8851C074671008B6D71 /* Main.storyboard */; };
 		6677E8891C074671008B6D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6677E8881C074671008B6D71 /* Assets.xcassets */; };
 		6677E88C1C074671008B6D71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6677E88A1C074671008B6D71 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		665B7F431C0A19D70077CBEC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				666B34E51C0C0B5800E92608 /* CoreMesh.framework in Embed Frameworks */,
+				665B7F401C0A19D70077CBEC /* Realm.framework in Embed Frameworks */,
+				666B35291C0C236300E92608 /* ObjectMapper.framework in Embed Frameworks */,
+				665B7F421C0A19D70077CBEC /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		664CD9CF1C0A5C7C0002FFCC /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		665FBA471C074B430039F6E2 /* ChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		665FBA4E1C0751EF0039F6E2 /* PeersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeersTableViewController.swift; sourceTree = "<group>"; };
+		665FBA5A1C075C340039F6E2 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		665FBA701C083D8D0039F6E2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		665FBA711C083D8D0039F6E2 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		665FBA761C083E0A0039F6E2 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		666B34E31C0C0B5800E92608 /* CoreMesh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreMesh.framework; path = "/Users/akio/Dropbox/Projects/Swift/MeshChat/DerivedData/MeshChat/Build/Products/Debug-iphoneos/CoreMesh.framework"; sourceTree = "<absolute>"; };
+		666B35261C0C231700E92608 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		6677E87E1C074671008B6D71 /* MeshChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeshChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6677E8811C074671008B6D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6677E8831C074671008B6D71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6677E8861C074671008B6D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6677E8881C074671008B6D71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6677E88B1C074671008B6D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666B34E41C0C0B5800E92608 /* CoreMesh.framework in Frameworks */,
+				665B7F3F1C0A19D70077CBEC /* Realm.framework in Frameworks */,
+				666B35281C0C236300E92608 /* ObjectMapper.framework in Frameworks */,
+				665B7F411C0A19D70077CBEC /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +79,11 @@
 		6677E8751C074671008B6D71 = {
 			isa = PBXGroup;
 			children = (
+				666B34E31C0C0B5800E92608 /* CoreMesh.framework */,
 				6677E8801C074671008B6D71 /* MeshChat */,
+				665FBA701C083D8D0039F6E2 /* Realm.framework */,
+				665FBA711C083D8D0039F6E2 /* RealmSwift.framework */,
+				666B35261C0C231700E92608 /* ObjectMapper.framework */,
 				6677E87F1C074671008B6D71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				6677E8811C074671008B6D71 /* AppDelegate.swift */,
-				6677E8831C074671008B6D71 /* ViewController.swift */,
+				665FBA471C074B430039F6E2 /* ChatManager.swift */,
+				665FBA761C083E0A0039F6E2 /* Models.swift */,
+				665FBA5A1C075C340039F6E2 /* RootViewController.swift */,
+				664CD9CF1C0A5C7C0002FFCC /* ChatTableViewController.swift */,
+				665FBA4E1C0751EF0039F6E2 /* PeersTableViewController.swift */,
 				6677E8851C074671008B6D71 /* Main.storyboard */,
 				6677E8881C074671008B6D71 /* Assets.xcassets */,
 				6677E88A1C074671008B6D71 /* LaunchScreen.storyboard */,
@@ -71,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6677E8901C074671008B6D71 /* Build configuration list for PBXNativeTarget "MeshChat" */;
 			buildPhases = (
+				6680DFB71C0B851700FA854E /* Run Carthage Script */,
+				6680DFB91C0B869000FA854E /* Run Versioning Script */,
 				6677E87A1C074671008B6D71 /* Sources */,
 				6677E87B1C074671008B6D71 /* Frameworks */,
 				6677E87C1C074671008B6D71 /* Resources */,
+				665B7F431C0A19D70077CBEC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +148,7 @@
 				TargetAttributes = {
 					6677E87D1C074671008B6D71 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2G99JW6X57;
 					};
 				};
 			};
@@ -130,13 +183,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6680DFB71C0B851700FA854E /* Run Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			name = "Run Carthage Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		6680DFB91C0B869000FA854E /* Run Versioning Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Versioning Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "plistBuddy=\"/usr/libexec/PlistBuddy\"\nbuildNumber=$($plistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n$plistBuddy -c \"Set CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6677E87A1C074671008B6D71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6677E8841C074671008B6D71 /* ViewController.swift in Sources */,
+				665FBA481C074B430039F6E2 /* ChatManager.swift in Sources */,
 				6677E8821C074671008B6D71 /* AppDelegate.swift in Sources */,
+				665FBA5B1C075C340039F6E2 /* RootViewController.swift in Sources */,
+				665FBA4F1C0751EF0039F6E2 /* PeersTableViewController.swift in Sources */,
+				665FBA771C083E0A0039F6E2 /* Models.swift in Sources */,
+				664CD9D01C0A5C7C0002FFCC /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +339,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/DerivedData/MeshChat/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = MeshChat/Info.plist;
+				INFOPLIST_PREPROCESS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ad.wide.sfc.aky.MeshChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -260,10 +361,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/DerivedData/MeshChat/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = MeshChat/Info.plist;
+				INFOPLIST_PREPROCESS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ad.wide.sfc.aky.MeshChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -286,6 +397,7 @@
 				6677E8921C074671008B6D71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
