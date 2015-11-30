@@ -436,13 +436,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBh-nb-Zgu">
-                                                <rect key="frame" x="244.5" y="239" width="110.5" height="27.5"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-Ix-J4I">
                                                 <rect key="frame" x="228" y="345" width="143" height="25"/>
                                                 <animations/>
@@ -476,7 +469,6 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="pCs-lS-5YW" firstAttribute="leading" secondItem="7Bb-Ix-J4I" secondAttribute="leading" constant="-10" id="Ct3-Jz-lrU"/>
-                                            <constraint firstItem="WiO-zW-RC6" firstAttribute="top" secondItem="vBh-nb-Zgu" secondAttribute="bottom" constant="8.5" id="Hq9-mO-P7p"/>
                                             <constraint firstItem="pCs-lS-5YW" firstAttribute="trailing" secondItem="7Bb-Ix-J4I" secondAttribute="trailing" constant="10" id="IW9-8q-R9v"/>
                                             <constraint firstItem="7Bb-Ix-J4I" firstAttribute="centerX" secondItem="WiO-zW-RC6" secondAttribute="centerX" id="O2e-Ui-Pee"/>
                                             <constraint firstItem="pCs-lS-5YW" firstAttribute="top" secondItem="7Bb-Ix-J4I" secondAttribute="bottom" constant="3" id="OkY-3q-Tj1"/>
@@ -484,7 +476,6 @@
                                             <constraint firstItem="WiO-zW-RC6" firstAttribute="centerY" secondItem="SIo-FG-efj" secondAttribute="centerY" id="fB4-Bo-RGa"/>
                                             <constraint firstItem="FWu-GD-aY3" firstAttribute="centerX" secondItem="WiO-zW-RC6" secondAttribute="centerX" id="h70-mc-w0e"/>
                                             <constraint firstItem="WiO-zW-RC6" firstAttribute="centerX" secondItem="SIo-FG-efj" secondAttribute="centerX" id="uYc-aw-gMI"/>
-                                            <constraint firstItem="vBh-nb-Zgu" firstAttribute="centerX" secondItem="WiO-zW-RC6" secondAttribute="centerX" id="vnI-d4-2YF"/>
                                             <constraint firstItem="7Bb-Ix-J4I" firstAttribute="top" secondItem="WiO-zW-RC6" secondAttribute="bottom" constant="20" id="w8x-5J-pY9"/>
                                         </constraints>
                                     </view>
