@@ -87,10 +87,10 @@ public final class ChatManager {
 	let realm: Realm
 
 	private init() {
-//		let dictionary = NSBundle.mainBundle().infoDictionary
-//		let version = dictionary.map { $0["CFBundleVersion"] }.flatMap { $0 as? String }.flatMap { UInt64($0) } ?? 0
+		let dictionary = NSBundle.mainBundle().infoDictionary
+		let version = dictionary.map { $0["CFBundleVersion"] }.flatMap { $0 as? String }.flatMap { UInt64($0) } ?? 0
 		do {
-			self.realm = try Realm(configuration: Realm.Configuration(inMemoryIdentifier: "MeshChat"))
+			self.realm = try Realm(configuration: Realm.Configuration(schemaVersion: version))
 		} catch let error as NSError {
 			fatalError(error.localizedDescription)
 		}

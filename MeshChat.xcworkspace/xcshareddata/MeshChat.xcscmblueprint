@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "048969E8B3D340A668FA829020CA482FEF6BF419",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "048969E8B3D340A668FA829020CA482FEF6BF419" : 0,
+    "3C9FED55AB747005717B3A39F3A2ACC4A806C923" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EDE33002-D76D-4224-B85E-2C89FFDECD3C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "048969E8B3D340A668FA829020CA482FEF6BF419" : "MeshChat\/",
+    "3C9FED55AB747005717B3A39F3A2ACC4A806C923" : "MeshChat\/CoreMesh\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MeshChat",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MeshChat.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Akkyie\/MeshChat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "048969E8B3D340A668FA829020CA482FEF6BF419"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Akkyie\/CoreMesh.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3C9FED55AB747005717B3A39F3A2ACC4A806C923"
+    }
+  ]
+}

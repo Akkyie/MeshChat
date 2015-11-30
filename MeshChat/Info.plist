@@ -19,7 +19,21 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>443</string>
+	<string>539</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>f9a21fd9e7fb03b9dd46c41620e3c6ada9f902d2</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

@@ -33,10 +33,6 @@ class ChatTableViewCell: UITableViewCell {
 
 class ChatTableViewController: UITableViewController {
 
-	@IBOutlet weak var headerView: UIView!
-	@IBOutlet weak var placeholderLabel: UILabel!
-	@IBOutlet weak var textView: UITextView!
-
 	var messages = ChatManager.defaultManager.realm.objects(Message)
 	var notificationToken: NotificationToken!
 
@@ -50,14 +46,11 @@ class ChatTableViewController: UITableViewController {
 	}
 
 	override func viewDidLoad() {
-		self.tableView.tableHeaderView = self.headerView
 		self.tableView.rowHeight = UITableViewAutomaticDimension
 		self.tableView.estimatedRowHeight = 80.0
 
 		self.refreshControl = UIRefreshControl()
 		self.refreshControl!.addTarget(self, action: "refresh", forControlEvents: .ValueChanged)
-
-		self.textView.delegate = self
 	}
 
 	override func viewWillAppear(animated: Bool) {
@@ -77,6 +70,10 @@ class ChatTableViewController: UITableViewController {
 	override func preferredStatusBarStyle() -> UIStatusBarStyle {
 		return .LightContent
 	}
+
+}
+
+extension ChatTableViewController {
 
 	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return self.messages.count
@@ -113,22 +110,6 @@ class ChatTableViewController: UITableViewController {
 
 	override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		return UITableViewAutomaticDimension
-	}
-
-}
-
-extension ChatTableViewController: UITextViewDelegate {
-
-	func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
-		guard text != "\n" else {
-			ChatManager.defaultManager.sendTextMessage(textView.text)
-			self.textView.text = ""
-			self.textView.endEditing(false)
-			return false
-		}
-		let string = (textView.text as NSString).stringByReplacingCharactersInRange(range, withString: text)
-		self.placeholderLabel.hidden = !string.isEmpty
-		return true
 	}
 
 }
